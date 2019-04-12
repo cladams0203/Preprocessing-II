@@ -6,6 +6,9 @@
     flex-wrap: wrap;
     border-bottom: 2px dashed @navigation-border;
     padding: 10px 5%;
+    @media @mobile {
+      flex-direction: column;
+    }
   }
   .fun-bus {
     border-bottom: 2px dashed @navigation-border;
@@ -14,21 +17,30 @@
   .sub-container {
     width: 90%;
     margin: 0 auto;
-  }
+   
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media @mobile {
+      flex-direction: column;
+      
+    }
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        .mbl-width();
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        .mbl-width();
+      }
 
       img {
         border-radius: 10px;
@@ -39,10 +51,14 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      
     }
 
     .img-content {
@@ -54,6 +70,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      .mbl-width();
+    }
 
     img {
       border-radius: 10px;
@@ -65,12 +84,19 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      .mobile-style();
+    }
+  }
 
     .destination {
       .flex(center, center);
       flex-wrap:wrap;
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width:90%;
+      }
     }
     .btn {
       .btn-style();
