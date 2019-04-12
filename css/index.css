@@ -199,14 +199,14 @@ nav a {
   flex-direction: row;
   flex-wrap: wrap;
   border-bottom: 2px dashed #C0C0C0;
-  padding: 10px 10%;
+  padding: 10px 5%;
 }
 .fun-bus {
   border-bottom: 2px dashed #C0C0C0;
   margin: 20px 0;
 }
 .sub-container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 .content-section {
@@ -252,6 +252,21 @@ nav a {
   justify-content: space-between;
 }
 .content-pick .destination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 30%;
   margin-bottom: 30px;
+}
+.content-pick .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17A2B8;
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: white;
 }
