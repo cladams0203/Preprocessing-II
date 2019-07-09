@@ -1,1 +1,27 @@
 // Mixins in here
+.testbor() {
+    border: 1px solid blue;
+}
+.flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.btn-style() {
+    .flex(center, center);
+    background-color: @button-bg;
+    width:100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: white;
+}
+.mobile-style() {
+    .flex(center, center);
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+.mbl-width() {
+    width:100%;
+}
