@@ -1,11 +1,13 @@
 
   .header {
     width: 100%;
+    //mixin for flex-box stling
     .flex(space-between, center);
     flex-direction: row;
     flex-wrap: wrap;
     border-bottom: 2px dashed @navigation-border;
     padding: 10px 5%;
+    //mixin for mobile styling
     @media @mobile {
       flex-direction: column;
     }
@@ -23,6 +25,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    //mixin for mobile styling
     @media @mobile {
       flex-direction: column;
       
@@ -99,7 +102,7 @@
       }
     }
     .btn {
-      .btn-style();
+      .btn-style(@button-bg, 100%);
     }
   }
 // home

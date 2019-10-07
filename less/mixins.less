@@ -2,26 +2,30 @@
 .testbor() {
     border: 1px solid blue;
 }
+//flexbox parametric mixin
 .flex(@justify, @align){
     display: flex;
     justify-content: @justify;
     align-items: @align;
 }
-.btn-style() {
+// Button parametric mixin
+.btn-style(@background:@button-bg, @width: 100%) {
     .flex(center, center);
-    background-color: @button-bg;
-    width:100%;
-    height: 50px;
+    background-color: @background;
+    width:@width;
+    padding: 15px 10px;
     border-radius: 10px;
     font-size: 2rem;
     color: white;
 }
+//mobile styling mixin
 .mobile-style() {
     .flex(center, center);
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
 }
+//mobile size mixin
 .mbl-width() {
     width:100%;
 }
